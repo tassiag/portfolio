@@ -1,0 +1,53 @@
+/* intro index page */
+
+
+.container {
+    background-color: $lightcolor;
+    width: 100%;
+   
+  
+}
+
+
+.intro {
+    font-family: $headingfont;
+    font-size: 86px;
+    font-weight: 900;
+    line-height: 1.5em;
+    margin: 0 auto;
+    
+   
+}
+
+.intro-container {
+    width: 90%;
+    margin: 20px auto;
+    animation: transitionMain 1s;
+
+    .animation-text{
+     position: relative;
+    white-space: normal;
+    animation:bgAnimation  1s steps(20,end) forwards;
+}
+    
+}
+
+
+@keyframes bgAnimation {
+  0% { background-color: transparent;}
+  100% { background-color: $lightgreen; }
+}
+
+
+
+
+/* responsive */
+@media only screen and (max-width:768px) {
+    .intro {
+    font-family: $headingfont;
+    font-size: 52px;
+    font-weight: 900;
+    } 
+}
+
+

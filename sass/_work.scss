@@ -1,0 +1,90 @@
+.portfolio {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin:20px auto;
+    justify-content: center;  
+}
+
+.row {
+    background-color: #f2f1ed;
+    flex-basis: 25%;
+    margin: 0 20px 50px 20px;
+    animation:  transitionMain 1s;
+    border-radius: 10px;
+    align-self: stretch;
+    padding-bottom: 20px;
+    font-size: 14px;
+
+    img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    }
+
+     h3 {
+        text-align: center;
+    }
+
+    p {
+        padding: 0 15px;
+        text-align: justify;
+
+        a {
+          @include a-normal;
+
+          &::after {
+              @include a-after;
+
+          }
+
+          &:hover::after {
+               @include a-hover-after;
+          }
+
+        }
+    }
+  
+}
+
+
+/* button */
+
+.button-wrapper {
+  text-align: center;
+
+  .button {
+    text-decoration: none;
+    color: $textcolor; 
+    border: 1px solid #b4e0dd;
+    font-family: $generalfont;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin-right: 10px;
+    display: inline-block;
+
+    &:hover {
+        background-color: #b4e0dd;
+        transition: all 0.3s ease-in-out;
+    }
+
+    i {
+        margin-right: 5px;
+    }
+
+
+}
+
+   
+}
+
+
+
+@media only screen and (max-width:920px) {
+    .row { 
+    flex-basis: 80%;
+    
+}
+
+
+}
