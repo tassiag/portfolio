@@ -24,7 +24,8 @@
     background: url("../img/photo.jpg");
     background-repeat: no-repeat;
     background-size: contain;
-    height: 500px;
+    height: 430px;
+    
     
     }
 
@@ -32,8 +33,10 @@
     width: 60%;
     background-color: $lightgreen;
     padding: 30px;
-    min-height: 500px;
-    margin-left: -30px;
+    min-height: 410px;
+    margin-left: -130px;
+    z-index: 1;
+
     
 
     .heading {
